@@ -1,0 +1,52 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "zjeżdżalnia dmuchana Dino",
+      "thumbnailUrl": "http://localhost:9000/a.jpg",
+      "rate": "(do uzgodnienia)",
+      "rating": "2/4/2 m",
+      "specialist": { "id": 1, "fullName": "dla najmłodszych dzieci" }
+    },
+    {
+      "id": 2,
+      "title": "zamek dmuchany Alladyn",
+      "thumbnailUrl": "http://localhost:9000/b.jpg",
+      "rate": "(do uzgodnienia)",
+      "rating": "3/4/2.5 m",
+      "specialist": { "id": 1, "fullName": "dla dzieci w różnym wieku" }
+    },
+    {
+      "id": 3,
+      "title": "zjeżdżalnia dmuchana Kubuś",
+      "thumbnailUrl": "http://localhost:9000/c.jpg",
+      "rate": "(do uzgodnienia)",
+      "rating": "5/8/6.5 m",
+      "specialist": { "id": 1, "fullName": "dla dzieci starszych" }
+    },
+    {
+      "id": 4,
+      "title": "zjeżdżalnia dmuchana Miś",
+      "thumbnailUrl": "http://localhost:9000/d.jpg",
+      "rate": "(do uzgodnienia)",
+      "rating": "5/9/7 m",
+      "specialist": { "id": 1, "fullName": "dla dzieci starszych" }
+    },
+    {
+      "id": 4,
+      "title": "urządzenie do produkcji popcornu",
+      "thumbnailUrl": "http://localhost:9000/h.jpg",
+      "rate": "",
+      "rating": "🍿",
+      "specialist": { "id": 1, "fullName": "dla dzieci i dorosłych" }
+    },
+    {
+      "id": 4,
+      "title": "urządzenie do produkcji waty cukrowej",
+      "thumbnailUrl": "http://localhost:9000/g.jpg",
+      "rate": "",
+      "rating": "🔍",
+      "specialist": { "id": 1, "fullName": "dla dzieci i dorosłych" }
+    }
+  ]
+}
