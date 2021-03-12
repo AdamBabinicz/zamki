@@ -1,0 +1,30 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.popup-inner {
+  border-radius: 5px;
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  text-align: justify;
+}
+.popup-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}

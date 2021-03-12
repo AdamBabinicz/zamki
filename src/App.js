@@ -2,6 +2,7 @@ import "./App.css";
 import { HomePage } from "./containers/HomePage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CustomerAccessPage } from "./containers/customerAccessPage";
+// import ImageSlider from "./components/imageSlider/ImageSlider";
 
 function App() {
   return (

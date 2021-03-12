@@ -90,7 +90,9 @@ export function SpecialistAd(props) {
             <Slogan>i zapewni wspaniałe doznania!</Slogan>
           </SloganContainer>
           <Marginer direction="vertical" margin="0.8em" />
-          <Button size={15}>Zadzwoń!</Button>
+          <a href="tel:+48531890827">
+            <Button size={15}>☎ zadzwoń!</Button>
+          </a>
         </SloganContainer>
         <StandoutImage>
           <img src={FarmingImg} alt="join-as-specialist" />
