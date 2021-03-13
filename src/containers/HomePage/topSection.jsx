@@ -34,11 +34,20 @@ const TopSectionInnerContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  @media screen and (max-width: ${deviceSize.mobile}px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const StandoutImage = styled.div`
   width: 40em;
   /* height: 34em; */
+
+  @media screen and (max-width: 678px) {
+    width: 20em;
+  }
 
   img {
     width: 100%;
@@ -111,11 +120,11 @@ export function TopSection(props) {
               <Button>Info</Button>
             </p>
           </LogoContainer>
-          {!isMobile && (
-            <StandoutImage>
-              <img src={TheBestSpecialistsImg} alt="..." />
-            </StandoutImage>
-          )}
+          {/* {!isMobile && ( */}
+          <StandoutImage>
+            <img src={TheBestSpecialistsImg} alt="..." />
+          </StandoutImage>
+          {/* )} */}
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
             <h3>Ważne informacje!</h3>
             <p>
