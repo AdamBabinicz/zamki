@@ -91,14 +91,15 @@ const FLink = styled.a`
 const PrivacyText = styled.h6`
   color: #a3a3a3;
   font-size: 11px;
-  margin: 0;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   display: flex;
-  margin-top: 5px;
+  margin-bottom: 2rem;
+  justify-content: center;
   align-items: center;
 
   @media screen and (max-width: ${deviceSize.mobile}px) {
     font-size: 8px;
+    margin-bottom: 0.1rem;
   }
 `;
 
@@ -132,6 +133,7 @@ const Scroll = styled.div`
   font-size: 3rem;
   color: #8a8a8a;
   transition: all, 200ms ease-in-out;
+  text-align: center;
 
   &:hover {
     color: #777777;
@@ -147,7 +149,7 @@ export function Footer(props) {
   const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
 
   return (
-    <FooterContainer>
+    <FooterContainer id="footer">
       <TopContainer>
         <ContentContainer>
           <Title>Linki ⬇</Title>
@@ -195,11 +197,8 @@ export function Footer(props) {
       <BottomContainer>
         <LeftBottomContainer>
           <BrandLogo hideLogo color="#8A8A8A" textSize={isMobile ? 20 : 25} />
-          <PrivacyText>2014 - {new Date().getFullYear()}.</PrivacyText>
         </LeftBottomContainer>
-        <Scroll>
-          <FaArrowAltCircleUp onClick={() => scroll.scrollToTop()} />
-        </Scroll>
+
         <RightBottomContainer>
           <SocialIcon>
             <a href="//www.facebook.com/wata.cukrowa.popcorn" target="_blank">
@@ -234,6 +233,10 @@ export function Footer(props) {
           </SocialIcon>
         </RightBottomContainer>
       </BottomContainer>
+      <Scroll>
+        <FaArrowAltCircleUp onClick={() => scroll.scrollToTop()} />
+        <PrivacyText>2014 - {new Date().getFullYear()}.</PrivacyText>
+      </Scroll>
     </FooterContainer>
   );
 }

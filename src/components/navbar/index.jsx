@@ -54,15 +54,15 @@ export function Navbar(props) {
     <NavbarContainer useTransparent={useTransparent}>
       <BrandLogo />
       <AccessibilityContainer>
-        {!isMobile && <AnchorLink>Galeria</AnchorLink>}
+        {!isMobile && <a href="#slider">Galeria</a>}
         {!isMobile && <Marginer direction="horizontal" margin={10} />}
         {!isMobile && <Seperator />}
         <Marginer direction="horizontal" margin={10} />
-        <Link to="/customer/access/signup">
-          <Button size={11}>Rejestracja</Button>
-        </Link>
+        <a href="#special">
+          <Button size={11}>Kontakt</Button>
+        </a>
         <Marginer direction="horizontal" margin={8} />
-        <AnchorLink to="/customer/access/signin">Login</AnchorLink>
+        <a href="#footer">Linki</a>
       </AccessibilityContainer>
     </NavbarContainer>
   );

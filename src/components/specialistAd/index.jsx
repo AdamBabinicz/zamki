@@ -76,7 +76,7 @@ export function SpecialistAd(props) {
   const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
 
   return (
-    <SpecialistAdContainer>
+    <SpecialistAdContainer id="special">
       <ContentContainer>
         <SloganContainer>
           <BrandLogo
@@ -91,7 +91,7 @@ export function SpecialistAd(props) {
           </SloganContainer>
           <Marginer direction="vertical" margin="0.8em" />
           <a href="tel:+48531890827">
-            <Button size={15}>☎ zadzwoń!</Button>
+            <Button size={15}>☎ 531 890 827</Button>
           </a>
         </SloganContainer>
         <StandoutImage>

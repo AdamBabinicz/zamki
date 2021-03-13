@@ -2,7 +2,6 @@ import "./App.css";
 import { HomePage } from "./containers/HomePage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CustomerAccessPage } from "./containers/customerAccessPage";
-// import ImageSlider from "./components/imageSlider/ImageSlider";
 
 function App() {
   return (
@@ -10,11 +9,11 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={HomePage} />
-          <Route
+          {/* <Route
             path="/customer/access/:action"
             exact
             component={CustomerAccessPage}
-          />
+          /> */}
         </Switch>
       </Router>
     </div>
