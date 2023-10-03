@@ -7,6 +7,7 @@ import { Marginer } from "../marginer";
 import { Link } from "react-router-dom";
 import { deviceSize } from "../responsive";
 import { useMediaQuery } from "react-responsive";
+import { animateScroll as scroll } from "react-scroll";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -15,6 +16,8 @@ const NavbarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5em;
+  /* z-index: 20;
+  position: fixed; */
 
   background: ${({ useTransparent }) =>
     useTransparent ? "transparent" : "#333"};
@@ -54,7 +57,11 @@ export function Navbar(props) {
     <NavbarContainer useTransparent={useTransparent}>
       <BrandLogo />
       <AccessibilityContainer>
-        {!isMobile && <a href="#slider">Galeria</a>}
+        {!isMobile && (
+          <a href="#slider" className="navb">
+            Galeria
+          </a>
+        )}
         {!isMobile && <Marginer direction="horizontal" margin={10} />}
         {!isMobile && <Seperator />}
         <Marginer direction="horizontal" margin={10} />
@@ -62,7 +69,9 @@ export function Navbar(props) {
           <Button size={11}>Kontakt</Button>
         </a>
         <Marginer direction="horizontal" margin={8} />
-        <a href="#footer">Linki</a>
+        <a href="#footer" className="navb">
+          Linki
+        </a>
       </AccessibilityContainer>
     </NavbarContainer>
   );

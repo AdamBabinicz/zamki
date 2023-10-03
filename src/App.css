@@ -6,6 +6,17 @@ a {
 a:hover {
   color: rgb(161, 161, 161);
 }
+/* .navb {
+  background: rgb(117, 117, 117);
+  padding: 5px 1.3em;
+  font-weight: 500;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+} */
 .slider {
   position: relative;
   height: 100vh;
