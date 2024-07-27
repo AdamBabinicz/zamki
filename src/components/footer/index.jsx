@@ -162,7 +162,7 @@ export function Footer(props) {
           <FLink href="//foto-budka.netlify.app" target="_blank">
             Fotobudka
           </FLink>
-          <FLink href="//grama.000webhostapp.com" target="_blank">
+          <FLink href="//grama.netlify.app" target="_blank">
             Ciasteczkowa GRAMA
           </FLink>
           <FLink href="//pranie-dywanow.j.pl" target="_blank">
